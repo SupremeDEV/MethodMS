@@ -8955,45 +8955,32 @@ public class MapleCharacter extends AnimatedMapleMapObject implements Serializab
         int mp = 0;
         switch (level) {
             case 10:
-                rewards.add(2450000);
-                rewards.add(2022918);
                 mp = 1000;
                 break;
             case 20:
-                rewards.add(2022918);
-                rewards.add(1032099);
                 mp = 3000;
                 break;
             case 30:
                 addReward(4, 0, 0, 5000000, 0, "Here is a special reward for beginners to help you start your journey!");//was 1000000
-                rewards.add(2450000);
                 rewards.add(1112659);
                 mp = 5000;
                 break;
             case 50:
-                rewards.add(2022918);
-                rewards.add(1003361);
-                rewards.add(1082399);
+                rewards.add(1132128);
                 rewards.add(1102337);
                 mp = 7500;
                 break;
             case 70:
-                rewards.add(2450000);
-                rewards.add(2022918);
-                rewards.add(1003016);
+                rewards.add(1003108);
                 mp = 10000;
                 break;
             case 100:
-                addReward(4, 0, 0, 50000000, 0, "Here is a special reward for the experts! Beta only tho.");//just for beta
-                rewards.add(2450000);
-                rewards.add(2022918);
-                rewards.add(1122195);
-                rewards.add(1132043);
-                rewards.add(1152084);
+                addReward(4, 0, 0, 10000000, 0, "Here is a special reward for the experts!");//just for beta
+                rewards.add(1032085);
+                rewards.add(1152062);
                 mp = 12500;
                 break;
             case 120:
-                rewards.add(2450000);
                 rewards.add(1182007);
                 mp = 15000;
                 break;
