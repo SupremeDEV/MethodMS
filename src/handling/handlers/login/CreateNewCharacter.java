@@ -254,6 +254,7 @@ public class CreateNewCharacter {
 		}
 		
 		if (job == JobType.Luminous) {
+			newchar.setMap(101000000);
 			newchar.setJob((short) 2700);
 			newchar.setLevel((short) 10);
 			newchar.getStat().str = 4;
@@ -266,9 +267,9 @@ public class CreateNewCharacter {
 		}
 
 		if(job == JobType.Resistance) {
-			newchar.setMap(931000000);
-			newchar.setLevel((short) 1);
-			//newchar.setRemainingAp(50);
+			newchar.setMap(310010000);
+			newchar.setLevel((short) 10);
+			newchar.setRemainingAp(50);
 		}
 
 		if (MapleCharacterUtil.canCreateChar(name, c.isGm())
