@@ -266,7 +266,7 @@ public class CreateNewCharacter {
 		}
 
 		if(job == JobType.Resistance) {
-			newchar.setMap(310000000);
+			newchar.setMap(931000000);
 			newchar.setLevel((short) 10);
 			newchar.setRemainingAp(50);
 		}
