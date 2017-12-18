@@ -9008,8 +9008,6 @@ public class MapleCharacter extends AnimatedMapleMapObject implements Serializab
 
     public void newCharRewards() {
         List<Integer> rewards = new LinkedList<>();
-        rewards.add(2022680);
-        rewards.add(2450031);
         rewards.add(1142358);
         for (int reward : rewards) {
             addReward(1, reward, 0, 0, 0, "Here is a special reward for beginners to help you start your journey!");
