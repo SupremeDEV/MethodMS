@@ -128,18 +128,28 @@ public class CreateNewCharacter {
 		
 		newchar.setHair(hair);
 		newchar.setSecondHair(hair);
+
+
+		//Setting the level of all characters and setting max hp/mp to 1000 with 50 stat points 
+		if (job != null) {
+			newchar.setLevel((short) 10);
+			newchar.setRemainingAp(50);
+			newchar.getStat().maxhp = 1000;
+			newchar.getStat().hp = 1000;
+			newchar.getStat().maxmp = 1000;
+			newchar.getStat().mp = 1000;
+			newchar.setRemainingSp(3);
+		}
 		
 		if (job == JobType.AngelicBuster) {
 			newchar.setSecondFace(21173);
 			newchar.setSecondHair(37141);
-			newchar.setLevel((short) 10);
-			newchar.getStat().int_ = 4;
-			newchar.getStat().dex = 57;
 			newchar.getStat().maxhp = 1500;
 			newchar.getStat().hp = 1500;
 			newchar.getStat().maxmp = 1500;
 			newchar.getStat().mp = 1500;
 			newchar.setRemainingSp(3);
+
 		} else if (job == JobType.Zero) {
 			newchar.setSecondFace(21290);
 			newchar.setSecondHair(37623);
@@ -255,19 +265,9 @@ public class CreateNewCharacter {
 		
 		if (job == JobType.Luminous) {
 			newchar.setJob((short) 2700);
-			newchar.setMap(101000000);
-			newchar.setLevel((short) 10);
-			newchar.getStat().str = 4;
-			newchar.getStat().int_ = 57;
-			newchar.getStat().maxhp = 500;
-			newchar.getStat().hp = 500;
-			newchar.getStat().maxmp = 1000;
-			newchar.getStat().mp = 1000;
-			newchar.setRemainingSp(3);
 		}
 
 		if(job == JobType.Resistance) {
-			newchar.setMap(310010000);
 			newchar.setLevel((short) 10);
 			newchar.setRemainingAp(50);
 		}
