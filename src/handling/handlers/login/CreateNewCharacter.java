@@ -133,7 +133,7 @@ public class CreateNewCharacter {
 		//Setting the level of all characters and setting max hp/mp to 1000 with 50 stat points 
 		if (job != null) {
 			newchar.setLevel((short) 10);
-			newchar.setRemainingAp(50);
+			newchar.setRemainingAp(50);  //may need to be removed if job advancement already gives reset ap 
 			//newchar.getStat().maxhp = 1000;
 			//newchar.getStat().hp = 1000;
 			//newchar.getStat().maxmp = 1000;
