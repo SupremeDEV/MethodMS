@@ -186,15 +186,9 @@ public class MapleServerHandler extends IoHandlerAdapter {
         
         int opcode = lea.readShort();
         try {
-<<<<<<< HEAD
-            // if(!isSpamHeader(opcode)){
-            //     System.out.println("[Recv] (" + opcode + ", " + OpcodeManager.getRecvOpByHeader((short) opcode) +") " + lea.toString());
-            // }
-=======
            // if(!isSpamHeader(opcode)){
            //     System.out.println("[Recv] (" + opcode + ", " + OpcodeManager.getRecvOpByHeader((short) opcode) +") " + lea.toString());
            // }
->>>>>>> a341a41fd6fbf13032ff08ffa1618c3d032f8d9e
         	boolean handled = OpcodeManager.handle(c, opcode, lea);
         	if (handled){
         		return;
