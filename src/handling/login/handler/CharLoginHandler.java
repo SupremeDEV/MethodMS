@@ -85,7 +85,7 @@ public class CharLoginHandler {
         newchar.setGender(gender);
         newchar.setName(name);
         newchar.setSkinColor((byte) 3); //troll
-        newchar.setLevel((short) 50);
+        newchar.setLevel((short) 50); //Found level set on log in << dont want to break this 
         newchar.getStat().str = (short) 4;
         newchar.getStat().dex = (short) 4;
         newchar.getStat().int_ = (short) 4;
