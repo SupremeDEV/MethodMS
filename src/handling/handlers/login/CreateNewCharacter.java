@@ -134,10 +134,10 @@ public class CreateNewCharacter {
 		if (job != null) {
 			newchar.setLevel((short) 10);
 			newchar.setRemainingAp(50);
-			newchar.getStat().maxhp = 1000;
-			newchar.getStat().hp = 1000;
-			newchar.getStat().maxmp = 1000;
-			newchar.getStat().mp = 1000;
+			//newchar.getStat().maxhp = 1000;
+			//newchar.getStat().hp = 1000;
+			//newchar.getStat().maxmp = 1000;
+			//newchar.getStat().mp = 1000;
 			newchar.setRemainingSp(3);
 		}
 		
