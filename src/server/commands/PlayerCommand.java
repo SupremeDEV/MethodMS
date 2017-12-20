@@ -404,27 +404,27 @@ public class PlayerCommand {
 		@Override
 		public int execute(MapleClient c, String[] splitted) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("\r\n@str, @dex, @int, @luk, @hp, @mp <amount to add or subtract>");
-			sb.append("\r\n@mob < Information on the closest monster >");
+			//sb.append("\r\n@str, @dex, @int, @luk, @hp, @mp <amount to add or subtract>");
+			//sb.append("\r\n@mob < Information on the closest monster >");
 			sb.append("\r\n@check < Displays various information; also use if you are stuck or unable to talk to NPC >");
 			//sb.append("\r\n@npc < Universal NPC >");
 			sb.append("\r\n@callgm < Send a message to all online GameMasters.");
-			sb.append("\r\n@home < Warp to Lucid base >");
-			sb.append("\r\n@fm < Warp to the FreeMarket instantly. >");
-			sb.append("\r\n@job < Job advancements! >");
+			//sb.append("\r\n@home < Warp to Lucid base >");
+			//sb.append("\r\n@fm < Warp to the FreeMarket instantly. >");
+			//sb.append("\r\n@job < Job advancements! >");
 			sb.append("\r\n@save < Fixes your experience and saves your character >");
-			/*sb.append("\r\n@joinevent < Join ongoing event >");
-             sb.append("\r\n@crescent < Universal Town Warp / Event NPC>");
-             sb.append("\r\n@dcash < Universal Cash Item Dropper >");
-             sb.append("\r\n@tsmega < Toggle super megaphone on/off >");
-             sb.append("\r\n@ea < If you are unable to attack or talk to NPC >");
-             sb.append("\r\n@clearslot < Cleanup that trash in your inventory >");
-             sb.append("\r\n@ranking < Use @ranking for more details >");
-             sb.append("\r\n@checkdrop < Use @checkdrop for more details >");
-             sb.append("\r\n@style < Styler >");
-             sb.append("\r\n@advance < Job Advancer >");
-             sb.append("\r\n@bosswarp < Boss Warper >");
-             sb.append("\r\n@fly < Makes you fly if you're in the Free Market >");*/
+			sb.append("\r\n@joinevent < Join ongoing event >");
+             //sb.append("\r\n@crescent < Universal Town Warp / Event NPC>");
+             //sb.append("\r\n@dcash < Universal Cash Item Dropper >");
+             //sb.append("\r\n@tsmega < Toggle super megaphone on/off >");
+             //sb.append("\r\n@ea < If you are unable to attack or talk to NPC >");
+             //sb.append("\r\n@clearslot < Cleanup that trash in your inventory >");
+             //sb.append("\r\n@ranking < Use @ranking for more details >");
+             //sb.append("\r\n@checkdrop < Use @checkdrop for more details >");
+             //sb.append("\r\n@style < Styler >");
+             //sb.append("\r\n@advance < Job Advancer >");
+             //sb.append("\r\n@bosswarp < Boss Warper >");
+             //sb.append("\r\n@fly < Makes you fly if you're in the Free Market >");*/
 			if (c.canClickNPC()) {
 				NPCTalk talk = new NPCTalk((byte) 4, 9010000, (byte) 0);
 				talk.setText(sb.toString());

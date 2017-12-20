@@ -36,29 +36,29 @@ public class LoginInformationProvider {
 
     public enum JobType {
 
-        UltimateAdventurer(-1, 0, 450004600, true, true, false, false, true, false, true, true),
-        Resistance(0, 3000, 100000003, true, false, false, false, false, false, true, true), // works
-        Adventurer(1, 0, 100000003, false, true, false, false, false, false, true, true), // works
-        Cygnus(2, 1000, 450004600, false, true, false, false, false, true, true, true), // works
-        Aran(3, 2000, 450004600, true, true, false, false, true, false, true, true), // cant create char
-        Evan(4, 0, 450004600, true, true, false, false, true, false, true, false),//works
-        Mercedes(5, 2002, 450004600, false, false, false, false, false, false, true, true),//works
-        Demon(6, 3001, 450004600, false, false, true, false, false, false, true, true),//works
-        Phantom(7, 2003, 450004600, false, true, false, false, false, true, true, true),//works
-        DualBlade(8, 0, 450004600, false, true, false, false, false, false, true, true),//works
-        Mihile(9, 5000, 450004600, true, true, false, false, true, false, true, true),//works
-        Luminous(10, 2004, 450004600, false, true, false, false, false, true, true, true),//works
-        Kaiser(11, 6000, 450004600, false, true, false, false, false, false, true, true),//works
-        AngelicBuster(12, 6001, 450004600, false, true, false, false, false, false, true, true),//works
-        Cannoneer(13, 0, 450004600, true, true, false, false, true, false, true, true),//doesn't warp to the right map warps to 3000000
-        Xenon(14, 3002, 450004600, true, true, true, false, false, false, true, true),//works
-        Zero(15, 10112, 450004600, false, true, false, false, false, true, true, true),//works
-        Shade(16, 2500, 450004600, false, true, false, false, false, true, true, true),//needs testing
-        Jett(17, 508, 450004600, false, false, false, false, false, true, true, true),//works
-        Hayato(18, 4001, 450004600, true, true, false, true, false, false, true, true),//works
-        Kanna(19, 4002, 450004600, true, true, false, true, false, false, true, true),//works
-        BEAST_TAMER(20, 11212, 450004600, true, true, false, true, false, false, true, true), //needs testing
-        KINESIS(22, 14000, 450004600, true, true, false, true, false, false, true, false); //works
+        UltimateAdventurer(-1, 0, 350012010, true, true, false, false, true, false, true, true),
+        Resistance(0, 3000, 310010000, true, false, false, false, false, false, true, true), // works
+        Adventurer(1, 0, 104000000, false, true, false, false, false, false, true, true), // works
+        Cygnus(2, 1000, 350012010, false, true, false, false, false, true, true, true), // works
+        Aran(3, 2000, 140000000, true, true, false, false, true, false, true, true), // cant create char
+        Evan(4, 0, 350020004, true, true, false, false, true, false, true, false),//works
+        Mercedes(5, 2002, 101050000, false, false, false, false, false, false, true, true),//works
+        Demon(6, 3001, 310010000, false, false, true, false, false, false, true, true),//works
+        Phantom(7, 2003, 350063100, false, true, false, false, false, true, true, true),//works
+        DualBlade(8, 0, 103000000, false, true, false, false, false, false, true, true),//works
+        Mihile(9, 5000, 350012010, true, true, false, false, true, false, true, true),//works
+        Luminous(10, 2004, 101000000, false, true, false, false, false, true, true, true),//works
+        Kaiser(11, 6000, 940011000, false, true, false, false, false, false, true, true),//works
+        AngelicBuster(12, 6001, 940011000, false, true, false, false, false, false, true, true),//works
+        Cannoneer(13, 0, 120000000, true, true, false, false, true, false, true, true),//doesn't warp to the right map warps to 3000000
+        Xenon(14, 3002, 310010000, true, true, true, false, false, false, true, true),//works
+        Zero(15, 10112, 321000100, false, true, false, false, false, true, true, true),//works
+        Shade(16, 2500, 940200030, false, true, false, false, false, true, true, true),//needs testing
+        Jett(17, 508, 120000000, false, false, false, false, false, true, true, true),//works
+        Hayato(18, 4001, 807000000, true, true, false, true, false, false, true, true),//works
+        Kanna(19, 4002, 807000000, true, true, false, true, false, false, true, true),//works
+        BEAST_TAMER(20, 11212, 866000000, true, true, false, true, false, false, true, true), //needs testing
+        KINESIS(22, 14000, 331001000, true, true, false, true, false, false, true, false); //works
         
     	//name(job selection, jobid, startermap, ?,?,?,?,?,?);
     	//todo add chase/bt(works on acernis146) and shade and kinesis
