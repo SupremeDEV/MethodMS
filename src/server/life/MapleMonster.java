@@ -127,7 +127,7 @@ public class MapleMonster extends AbstractLoadedMapleLife {
     }
 
     public final void disableDrops() {
-        this.dropsDisabled = true;
+        this.dropsDisabled = false;
     }
 
     public final boolean dropsDisabled() {
