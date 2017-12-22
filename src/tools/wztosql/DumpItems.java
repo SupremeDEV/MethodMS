@@ -459,6 +459,7 @@ public class DumpItems {
         try {
             properties.load(new FileInputStream("config.properties"));
         } catch (IOException ex) {
+            System.out.println(ex);
             System.out.println("Failed to load config.properties");
         }
 

@@ -136,11 +136,12 @@ public class OpcodeManager {
             if (method != null) { 
                 method.invoke(null, client, lea);
                 return true;
-            } else {
-				if(!isSpamRecvHeader(opcode)){
-					System.out.println("[Unhandled] [Recv] (" + opcode + ") " + lea);
-				}
-			}
+			} 
+			// else {
+			// 	if(!isSpamRecvHeader(opcode)){
+			// 		System.out.println("[Unhandled] [Recv] (" + opcode + ") " + lea);
+			// 	}
+			// }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (IllegalArgumentException e) {

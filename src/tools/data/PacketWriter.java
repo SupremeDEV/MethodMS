@@ -56,11 +56,11 @@ public class PacketWriter {
             if(op == null){
                 op = "UNKNOWN";
             }
-            if(packet.length() <= 5){
-                System.out.println("[Send] (" + op + "): No data");
-            }else {
-                System.out.println("[Send] (" + actHeader + ", " + op + ", " + ((toString().length()+1)/3) + "):" + toString().substring(5));
-            }
+            // if(packet.length() <= 5){
+            //     System.out.println("[Send] (" + op + "): No data");
+            // }else {
+            //     System.out.println("[Send] (" + actHeader + ", " + op + ", " + ((toString().length()+1)/3) + "):" + toString().substring(5));
+            // }
         }
         return baos.toByteArray();
     }
