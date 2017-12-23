@@ -58,7 +58,7 @@ public class LoginInformationProvider {
         Hayato(18, 4001, 807040000, true, true, false, true, false, false, true, true),//works
         Kanna(19, 4002, 807040000, true, true, false, true, false, false, true, true),//works
         BEAST_TAMER(20, 11212, 866000000, true, true, false, true, false, false, true, true), //needs testing
-        KINESIS(22, 14000, 331001000, true, true, false, true, false, false, true, false); //works
+        KINESIS(22, 14000, 331001110, true, true, false, true, false, false, true, false); //works
         
     	//name(job selection, jobid, startermap, ?,?,?,?,?,?);
     	//todo add chase/bt(works on acernis146) and shade and kinesis
