@@ -131,15 +131,15 @@ public class CreateNewCharacter {
 
 
 		//Setting the level of all characters and setting max hp/mp to 1000 with 50 stat points 
-		if (job != null) {
-			newchar.setLevel((short) 10);
-			newchar.setRemainingAp(50);  //may need to be removed if job advancement already gives reset ap 
+		//if (job != null) {
+			//newchar.setLevel((short) 10);
+			//newchar.setRemainingAp(50);  //may need to be removed if job advancement already gives reset ap 
 			//newchar.getStat().maxhp = 1000;
 			//newchar.getStat().hp = 1000;
 			//newchar.getStat().maxmp = 1000;
 			//newchar.getStat().mp = 1000;
-			newchar.setRemainingSp(3);
-		}
+			//newchar.setRemainingSp(3);
+		//}
 		
 		if (job == JobType.AngelicBuster) {
 			newchar.setSecondFace(21173);
@@ -148,6 +148,7 @@ public class CreateNewCharacter {
 			newchar.getStat().hp = 1500;
 			newchar.getStat().maxmp = 1500;
 			newchar.getStat().mp = 1500;
+			newchar.setLevel((short) 10);
 			newchar.setRemainingSp(3);
 
 		} else if (job == JobType.Zero) {
@@ -265,11 +266,14 @@ public class CreateNewCharacter {
 		
 		if (job == JobType.Luminous) {
 			newchar.setJob((short) 2700);
+			newchar.setLevel((short) 10);
+			newchar.setRemainingAp(50);
+			newchar.setRemainingSp(3);
 		}
 
 		if(job == JobType.Resistance) {
-			newchar.setLevel((short) 10);
-			newchar.setRemainingAp(50);
+			//newchar.setLevel((short) 10);
+			//newchar.setRemainingAp(50);
 		}
 
 		if (MapleCharacterUtil.canCreateChar(name, c.isGm())
