@@ -290,9 +290,28 @@ public class CreateNewCharacter {
 			newchar.getStat().int_ = (54);
 			newchar.getStat().maxhp = 1000;
 			newchar.getStat().hp = 1000;
-			newchar.getStat().maxmp = 100;
-			newchar.getStat().mp = 1000;
+		}
 
+		if (job == JobType.Hayato) {
+			newchar.setJob((short) 4100);
+			newchar.setLevel((short) 10);
+			newchar.setRemainingSp(5);
+			newchar.getStat().str = (54);
+			newchar.getStat().maxhp = 1000;
+			newchar.getStat().hp = 1000;
+			newchar.getStat().maxmp = 300;
+			newchar.getStat().mp = 300;
+		}
+
+		if (job == JobType.Kanna) {
+			newchar.setJob((short) 4200);
+			newchar.setLevel((short) 10);
+			newchar.setRemainingSp(5);
+			newchar.getStat().int_ = (58);
+			newchar.getStat().maxhp = 800;
+			newchar.getStat().hp = 800;
+			newchar.getStat().maxmp = 300;
+			newchar.getStat().mp = 300;
 		}
 
 		if (job == JobType.Xenon) {

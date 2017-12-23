@@ -103,7 +103,7 @@ public class CashShopOperation {
         //System.out.println("CS_Featured_Item");
         c.getSession().write(CSPacket.showNXMapleTokens(c.getPlayer()));
         }
-        catch (Execiption e)
+        catch (Exception e)
         {
             System.out.println(e);
         }
