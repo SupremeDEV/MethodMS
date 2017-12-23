@@ -144,6 +144,7 @@ public class CreateNewCharacter {
 		if (job == JobType.AngelicBuster) {
 			newchar.setSecondFace(21173);
 			newchar.setSecondHair(37141);
+			newchar.getStat().dex = 58;
 			newchar.getStat().maxhp = 1500;
 			newchar.getStat().hp = 1500;
 			newchar.getStat().maxmp = 1500;
@@ -267,7 +268,7 @@ public class CreateNewCharacter {
 		if (job == JobType.Luminous) {
 			newchar.setJob((short) 2700);
 			newchar.setLevel((short) 10);
-			newchar.setRemainingAp(50);
+			newchar.getStat().dex = 58;
 			newchar.setRemainingSp(3);
 		}
 
@@ -282,6 +283,19 @@ public class CreateNewCharacter {
 			newchar.setRemainingSp(3);
 		}
 
+		if (job == JobType.Xenon) {
+			newchar.setJob((short) 3600);
+			newchar.setLevel((short) 10);
+			newchar.getStat().str = 20;
+			newchar.getStat().dex = 20;
+			newchar.getStat().luk = 20;
+			newchar.getStat().maxhp = 1000;
+			newchar.getStat().hp = 1000;
+			newchar.getStat().maxmp = 100;
+			newchar.getStat().mp = 1000;
+			newchar.setRemainingAp(6);
+			newchar.setRemainingSp(3);
+		}
 		
 		//if(job == JobType.Resistance) {
 			//newchar.setLevel((short) 10);
