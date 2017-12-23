@@ -73,7 +73,7 @@ public class CashShopOperation {
         }
 
         final int state = c.getLoginState();
-        boolean allowLogin = true;
+        boolean allowLogin = false;
         if (state == MapleClient.LOGIN_SERVER_TRANSITION || state == MapleClient.CHANGE_CHANNEL) {
             if (!World.isCharacterListConnected(c.loadCharacterNames(c.getWorld()))) {
                 allowLogin = true;
