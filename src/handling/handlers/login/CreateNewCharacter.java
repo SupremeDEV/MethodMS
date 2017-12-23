@@ -271,10 +271,22 @@ public class CreateNewCharacter {
 			newchar.setRemainingSp(3);
 		}
 
-		if(job == JobType.Resistance) {
+		if (job == JobType.Kaiser) {
+			newchar.setJob((short) 6100);
+			newchar.setLevel((short) 10);
+			newchar.getStat().str = 58;
+			newchar.getStat().maxhp = 1600;
+			newchar.getStat().hp = 1600;
+			newchar.getStat().maxmp = 1200;
+			newchar.getStat().mp = 1200;
+			newchar.setRemainingSp(3);
+		}
+
+		
+		//if(job == JobType.Resistance) {
 			//newchar.setLevel((short) 10);
 			//newchar.setRemainingAp(50);
-		}
+		//}
 
 		if (MapleCharacterUtil.canCreateChar(name, c.isGm())
 				&& (!LoginInformationProvider.getInstance().isForbiddenName(name) || c.isGm())

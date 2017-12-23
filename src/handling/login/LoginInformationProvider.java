@@ -48,8 +48,8 @@ public class LoginInformationProvider {
         DualBlade(8, 0, 103050900, false, true, false, false, false, false, true, true),//works
         Mihile(9, 5000, 746000003, true, true, false, false, true, false, true, true),//works
         Luminous(10, 2004, 101000000, false, true, false, false, false, true, true, true),//works
-        Kaiser(11, 6000, 940011000, false, true, false, false, false, false, true, true),//works
-        AngelicBuster(12, 6001, 940011000, false, true, false, false, false, false, true, true),//works
+        Kaiser(11, 6000, 400000000, false, true, false, false, false, false, true, true),//works
+        AngelicBuster(12, 6001, 400000000, false, true, false, false, false, false, true, true),//works
         Cannoneer(13, 0, 3000100, true, true, false, false, true, false, true, true),//doesn't warp to the right map warps to 3000000
         Xenon(14, 3002, 310010000, true, true, true, false, false, false, true, true),//works
         Zero(15, 10112, 321000100, false, true, false, false, false, true, true, true),//works
