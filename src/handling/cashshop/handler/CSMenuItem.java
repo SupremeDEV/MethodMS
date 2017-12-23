@@ -35,7 +35,9 @@ public class CSMenuItem {
                             rs.getInt("likes")));
                 }
             }
-        } catch (SQLException ex) {        }
+        } catch (SQLException ex) {
+            System.out.println(ex);
+                }
 
     }
     private int c, sc, p, i, sn, id, op, sp, qty, dur, likes;
