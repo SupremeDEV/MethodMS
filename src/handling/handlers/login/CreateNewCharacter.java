@@ -284,8 +284,15 @@ public class CreateNewCharacter {
 		}
 
 		if (job == JobType.KINESIS) {
+			newchar.setJob((short) 14200);
 			newchar.setLevel((short) 10);
 			newchar.setRemainingSp(3);
+			newchar.getStat().int_ = (54);
+			newchar.getStat().maxhp = 1000;
+			newchar.getStat().hp = 1000;
+			newchar.getStat().maxmp = 100;
+			newchar.getStat().mp = 1000;
+
 		}
 
 		if (job == JobType.Xenon) {
