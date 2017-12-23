@@ -58,6 +58,7 @@ public class CashShopOperation {
 
     public static void EnterCS(final CharacterTransfer transfer, final MapleClient c) {
         if (transfer == null) {
+            System.out.println("transfer null");
             c.getSession().close();
             return;
         }
@@ -72,7 +73,7 @@ public class CashShopOperation {
         }
 
         final int state = c.getLoginState();
-        boolean allowLogin = false;
+        boolean allowLogin = true;
         if (state == MapleClient.LOGIN_SERVER_TRANSITION || state == MapleClient.CHANGE_CHANNEL) {
             if (!World.isCharacterListConnected(c.loadCharacterNames(c.getWorld()))) {
                 allowLogin = true;
@@ -84,14 +85,23 @@ public class CashShopOperation {
             return;
         }
         c.updateLoginState(MapleClient.LOGIN_LOGGEDIN, c.getSessionIPAddress());
+        System.out.println("updated login state");
         CashShopServer.getPlayerStorage().registerPlayer(chr);
+        System.out.println("registered player");
         c.getSession().write(CSPacket.warpCS(c));
+        System.out.println("warpCS packet");
         c.getSession().write(CSPacket.loadCategories());
+        System.out.println("loadcategories ");
         c.getSession().write(CSPacket.CS_Picture_Item());
+        System.out.println("CS_Picture_Item");
         c.getSession().write(CSPacket.CS_Top_Items());
+        System.out.println("CS_Top_Items");
         c.getSession().write(CSPacket.CS_Special_Item());
+        System.out.println("CS_Special_Item");
         c.getSession().write(CSPacket.CS_Featured_Item());
+        System.out.println("CS_Featured_Item");
         c.getSession().write(CSPacket.showNXMapleTokens(c.getPlayer()));
+        System.out.println("showNXMapleTokens");
         //doCSPackets(c);
     }
 
