@@ -85,23 +85,29 @@ public class CashShopOperation {
             return;
         }
         c.updateLoginState(MapleClient.LOGIN_LOGGEDIN, c.getSessionIPAddress());
-        System.out.println("updated login state");
+        //System.out.println("updated login state");
         CashShopServer.getPlayerStorage().registerPlayer(chr);
-        System.out.println("registered player");
+        //System.out.println("registered player");
+        try{
         c.getSession().write(CSPacket.warpCS(c));
-        System.out.println("warpCS packet");
+        //System.out.println("warpCS packet");
         c.getSession().write(CSPacket.loadCategories());
-        System.out.println("loadcategories ");
+        //System.out.println("loadcategories ");
         c.getSession().write(CSPacket.CS_Picture_Item());
-        System.out.println("CS_Picture_Item");
+        //System.out.println("CS_Picture_Item");
         c.getSession().write(CSPacket.CS_Top_Items());
-        System.out.println("CS_Top_Items");
+        //System.out.println("CS_Top_Items");
         c.getSession().write(CSPacket.CS_Special_Item());
-        System.out.println("CS_Special_Item");
+        //System.out.println("CS_Special_Item");
         c.getSession().write(CSPacket.CS_Featured_Item());
-        System.out.println("CS_Featured_Item");
+        //System.out.println("CS_Featured_Item");
         c.getSession().write(CSPacket.showNXMapleTokens(c.getPlayer()));
-        System.out.println("showNXMapleTokens");
+        }
+        catch (Execiption e)
+        {
+            System.out.println(e);
+        }
+        //System.out.println("showNXMapleTokens");
         //doCSPackets(c);
     }
 
